@@ -1,3 +1,9 @@
+github:
+  user_or_org: ramonaoptics
+channels:
+  targets:
+  -
+    - ramonaoptics
 travis:
   secure:
     BINSTAR_TOKEN: SpAjUiq8X9IakYbBfbOqQEIIynOIJNIuKfrQNlmBwmw5AMqg8jTKc8OREq8hO6t2xjFCnlG9Ji1RqJQYwj0nYPmekHgA43/75NHzoIxaq4C6hIsGpln6esMt13CeszbBDeSJvmWbA729QosZm6wEW6qm2QQPjkty3M184AFCTyTOG9+TsQT0BBRn0VZgJUeow15OfeYBLpPSZcuQWH4U+70bXaX1hBo2G3uOg7V87MZ4Pw5uRiXwGz8pkToztEMw88tSuSNrGvY+4thyqW3cthjYbW5HO4Vgkeza90GNqRFmAMZQJGxMcxXjDvbKwNx+cNnuso8UabQxeuVv6kgjgCgalOvNhsfaKD/tmRq1vAi1VR5UTHNdGEr3XOrPs+E491O8nTynUTkzSwOp6EHdSBtHCF1rI9FNzurOd25NDIMgwXqR+LKamMnQlYFqy6+kQllInRoGU/1Ig/oo0cu+VxPXlmug4i3Jim+08+KgmzAjYiwi+FzQ5Ril5/6mMfC8e5MU2oHY/iuQ3ky1EDnfnk/JeEGa+SQ9Czp0msziQYSJxUKDdA7BTSAdJ3M3+5PA5kDxnEcrcOXncpzXLVSx36dtXu5l4p+uWfFklOZ9R6OI7kX27Pcz40Npqe6IijVv4fRFyfeaPjkEzIG/5yXss/tTlo/Nh8l27YuypUsdUSY=
