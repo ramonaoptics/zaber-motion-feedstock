@@ -1,0 +1,13 @@
+diff --git a/py/bindings_linux/zaber_motion_bindings_linux/bindings.py b/py/bindings_linux/zaber_motion_bindings_linux/bindings.py
+index b72b5bbf..6bc8b725 100644
+--- a/py/bindings_linux/zaber_motion_bindings_linux/bindings.py
++++ b/py/bindings_linux/zaber_motion_bindings_linux/bindings.py
+@@ -2,5 +2,5 @@ from ctypes import cdll
+ import os
+ 
+ def load_library(name):
+-    file = os.path.join(os.path.dirname(__file__), name)
+-    return cdll.LoadLibrary(file)
+\ No newline at end of file
++    # file = os.path.join(os.path.dirname(__file__), name)
++    return cdll.LoadLibrary(name)
