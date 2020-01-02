@@ -10,6 +10,7 @@ source:
   sha256: ee76829d2fb98f2c071b9f92375958b4fa1cc23c6cef1781d97c0cc089dede5e
   patches:
     - no_bindings_install.patch
+    - dont_specify_python_3_in_executable_name.patch  # [win]
 
 build:
   # For some reason, python 2.7 doesn't work
