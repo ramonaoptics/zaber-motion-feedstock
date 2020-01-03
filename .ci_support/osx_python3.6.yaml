@@ -4,6 +4,8 @@ c_compiler:
 - clang
 c_compiler_version:
 - '9'
+cgo_compiler:
+- go-cgo
 channel_sources:
 - ramonaoptics,conda-forge,defaults
 channel_targets:
