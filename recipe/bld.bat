@@ -1,25 +1,23 @@
 @echo ON
 setlocal enabledelayedexpansion
+cd src/zaber-motion
 
-set GOOS=windows
-if %ARCH% == 64 set GOARCH=amd64
-if %ARCH% == 32 set GOARCH=386
 set GO111MODULE=on
-
 protoc -I=. --go_out="internal" protobufs\main.proto
 if errorlevel 1 exit 1
 
 set zaber_motion_libname=zaber-motion-lib-%GOOS%-%GOARCH%
 set zaber_motion_lib=%zaber_motion_libname%.dll
 set zaber_motion_header=%zaber_motion_libname%.h
-go build -buildmode=c-shared -o .\build\%zaber_motion_lib%
-REM it seems that go build sets the error level to 1 always???
-REM if errorlevel 1 exit 1
+go build -buildmode=c-shared -o ./build/%zaber_motion_lib%
+if errorlevel 1 exit 1
 
 dir build
 
 copy build\%zaber_motion_lib% %LIBRARY_BIN%\.
+if errorlevel 1 exit 1
 copy build\%zaber_motion_header% %LIBRARY_INC%\.
+if errorlevel 1 exit 1
 
 
 rem Look at gulpfil.js, protobuf_py

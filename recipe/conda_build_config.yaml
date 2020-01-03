@@ -1,3 +1,7 @@
+channel_sources:
+  - ramonaoptics,conda-forge,defaults
+channel_targets:
+  - ramonaoptics main
 macos_min_version:             # [osx]
   - 10.10                      # [osx]
 MACOSX_DEPLOYMENT_TARGET:      # [osx]
