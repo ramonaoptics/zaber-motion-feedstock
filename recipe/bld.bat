@@ -1,5 +1,6 @@
 @echo ON
 setlocal enabledelayedexpansion
+del go.mod
 
 set GOOS=windows
 if %ARCH% == 64 set GOARCH=amd64

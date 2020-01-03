@@ -1,5 +1,6 @@
 set -x
 SHORT_OS_STR=$(uname -s)
+rm go.mod
 
 # Follow upstream's naming convention, even though it is a little crazy
 # TODO: detect arm build correctly when desired.
