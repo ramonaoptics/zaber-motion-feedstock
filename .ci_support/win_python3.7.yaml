@@ -1,3 +1,5 @@
+cgo_compiler:
+- go-cgo
 channel_sources:
 - ramonaoptics,conda-forge,defaults
 channel_targets:
