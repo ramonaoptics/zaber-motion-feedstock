@@ -22,8 +22,9 @@ requirements:
     # for some reason, compiler cgo doesn't seem to work
     # - {{ compiler('cgo') }}
     - go-cgo
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
+    - m2w64-toolchain        # [win]
+    - {{ compiler('c') }}    # [not win]
+    - {{ compiler('cxx') }}  # [not win]
   host:
     - python
     - pip
