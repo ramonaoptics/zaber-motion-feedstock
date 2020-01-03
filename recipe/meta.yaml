@@ -21,9 +21,9 @@ requirements:
   build:
     # for some reason, compiler cgo doesn't seem to work
     # - {{ compiler('cgo') }}        # [win or osx]
+    - go-cgo
     - {{ compiler('m2w64_c') }}    # [win]
     - {{ compiler('m2w64_cxx') }}  # [win]
-    - go-cgo
     # - m2w64-toolchain            # [win]
     - {{ compiler('c') }}          # [not win]
     - {{ compiler('cxx') }}        # [not win]
