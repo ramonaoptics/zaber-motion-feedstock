@@ -16,7 +16,7 @@ source:
 build:
   # For some reason, python 2.7 doesn't work, too lazy for now
   skip: true  # [py==27]
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -34,11 +34,14 @@ requirements:
   run:
     - python
     - protobuf
-    - rx
+    # They import rx.subjects which doesn't seem to exist
+    # in rx 3
+    - rx       1
 
 test:
   imports:
     - zaber_motion
+    - zaber_motion.ascii
 
 about:
   home: https://gitlab.com/zaber-core-libs/zaber-motion-lib
